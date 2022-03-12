@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(0, 0, 102);
+}
+
+p {
+    font-size: 4rem;
+    color: rgb(231, 197, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.game-area {
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(231, 197, 0);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.quote-display {
+    /* min-height: 100px; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+textarea {
+    min-height: 200px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.815);
+}
+
+textarea:focus {
+    border: 2px solid black;
+}
+
+.correct {
+    color: rgb(5, 138, 5);
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
